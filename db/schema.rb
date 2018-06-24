@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_23_203337) do
+ActiveRecord::Schema.define(version: 2018_06_24_212405) do
 
   create_table "fibs", force: :cascade do |t|
-    t.integer "sequence_length"
-    t.integer "squares_sum"
+    t.integer "sequence_length", limit: 21
+    t.integer "squares_sum", limit: 21
     t.text "sequence"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

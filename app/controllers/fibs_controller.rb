@@ -69,6 +69,6 @@ class FibsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def fib_params
-      params.fetch(:fib, {}).permit(:sequence_length)
+      params.fetch(:fib, {}).permit(:id, :sequence_length)
     end
 end

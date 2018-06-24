@@ -9,7 +9,7 @@ class Fib < ApplicationRecord
   validates_numericality_of :sequence_length, greater_than: 0
 
   def cache
-    @cache || {}
+    @cache ||= {}
   end
 
   def generate_sequence

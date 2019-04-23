@@ -1,4 +1,6 @@
-class Fib extends React.Component {
+import React from 'react'
+
+export default class Fib extends React.Component {
   constructor(props) {
     super(props);
     this.state = {

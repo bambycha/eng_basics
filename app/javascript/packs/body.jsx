@@ -1,4 +1,8 @@
-class Body extends React.Component {
+import React from 'react';
+import NewFib from './new_fib';
+import AllFibs from './all_fibs';
+
+export default class Body extends React.Component {
   constructor(props) {
     super(props);
     this.state = {

@@ -1,4 +1,7 @@
-const AllFibs = (props) => {
+import React from 'react'
+import Fib from './fib';
+
+export const AllFibs = (props) => {
   const fibs = props.fibs.map((fib) => {
     return(
       <Fib
@@ -26,3 +29,5 @@ const AllFibs = (props) => {
     </table>
   )
 }
+
+export default AllFibs;

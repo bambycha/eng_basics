@@ -1,4 +1,6 @@
-const NewFib = (props) => {
+import React from 'react'
+
+export const NewFib = (props) => {
   let formFields = {}
 
   return(
@@ -9,3 +11,5 @@ const NewFib = (props) => {
     </div>
   )
 }
+
+export default NewFib;

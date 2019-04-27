@@ -10,6 +10,25 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "babel-jest": "^24.7.1",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "jest": "^24.7.1",
+    "regenerator-runtime": "^0.13.2",
     "webpack-dev-server": "^3.3.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watch"
+  },
+  "jest": {
+    "roots": [
+      "test/javascript"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "app/javascript"
+    ],
+    "setupFilesAfterEnv": ["./test/javascript/setupTests.js"]
   }
 }

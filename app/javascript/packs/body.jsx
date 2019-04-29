@@ -63,14 +63,14 @@ export default class Body extends React.Component {
   }
 
   deleteFib(id){
-    newFibs = this.state.fibs.filter((fib) => fib.id !== id)
+    const newFibs = this.state.fibs.filter((fib) => fib.id !== id)
     this.setState({
       fibs: newFibs
     })
   }
 
   componentDidMount(){
-    fetch('/fibs.json')
+    fetch('http://localhost:3000/fibs.json')
       .then((response) => { return response.json() })
       .then((data) => { this.setState({ fibs: data }) });
   }

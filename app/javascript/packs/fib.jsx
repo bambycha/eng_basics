@@ -40,10 +40,10 @@ export default class Fib extends React.Component {
         <td>{squaresSum}</td>
         <td>{`[${sequence.join()}]`}</td>
         <td>
-          <button onClick={() => this.props.handleDelete(id)}>Delete</button>
+          <button className="delete" onClick={() => this.props.handleDelete(id)}>Delete</button>
         </td>
         <td>
-          <button onClick={this.handleEdit}>{this.state.editable? 'Submit' : 'Edit'}</button>
+          <button className="edit" onClick={this.handleEdit}>{this.state.editable? 'Submit' : 'Edit'}</button>
         </td>
       </tr>
     )

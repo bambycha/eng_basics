@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const NewFib = (props) => {
+const NewFib = (props) => {
   let formFields = {}
 
   return(

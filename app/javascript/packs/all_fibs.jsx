@@ -1,7 +1,7 @@
 import React from 'react'
 import Fib from './fib';
 
-export const AllFibs = (props) => {
+const AllFibs = (props) => {
   const fibs = props.fibs.map((fib) => {
     return(
       <Fib
